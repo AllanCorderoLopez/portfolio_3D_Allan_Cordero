@@ -103,7 +103,7 @@ const Ship = ({ isRotating, animationSpeed, planetPosition, ...props }) => {
         object={scene}
         scale={shipScale}
         rotation={[rotationX, rotation, 0]}
-        position={[-3, 0, -10]}
+        position={[0, 0, -10]}
       />
     </mesh>
   );
