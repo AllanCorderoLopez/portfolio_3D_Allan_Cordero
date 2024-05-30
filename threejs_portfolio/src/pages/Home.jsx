@@ -27,7 +27,7 @@ function Home() {
 
   const adjustPlanetForScreenSize = () => {
     let screenScale = null;
-    let screenPosition = [-4, -3, -43];
+    let screenPosition = [0, -3, -43];
     let rotation = [0.1, 4, 0];
 
     if (window.innerWidth < 768) {
