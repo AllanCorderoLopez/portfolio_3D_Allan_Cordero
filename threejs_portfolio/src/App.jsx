@@ -21,13 +21,13 @@ const App = () => {
     <main className='bg-slate-300/20'>
       <Router>
        
-        <FloatingNav navItems={navItems} /> {/* Agrega el FloatingNav aquí */}
+        <FloatingNav navItems={navItems} /> 
         <Routes>
-  <Route path='/' element={<Home />} />
-  <Route path='/about' element={<About />} />
-  <Route path='/projects' element={<Projects />} />
-  <Route path='/contact' element={<Contact />} />
-</Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/contact' element={<Contact />} />
+        </Routes>
 
       </Router>
     </main>
