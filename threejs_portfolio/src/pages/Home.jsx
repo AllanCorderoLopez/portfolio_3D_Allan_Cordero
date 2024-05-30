@@ -31,7 +31,7 @@ function Home() {
     let rotation = [0.1, 4, 0];
 
     if (window.innerWidth < 768) {
-      screenScale = [7.5, 7.5, 7.5];
+      screenScale = [4, 4, 4];
     } else {
       screenScale = [7, 7, 7];
     }

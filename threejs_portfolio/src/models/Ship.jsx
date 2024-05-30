@@ -14,6 +14,12 @@ const Ship = ({ isRotating, animationSpeed, planetPosition, ...props }) => {
 
   const rotationLimitHorizontal = 0.3;
   const rotationLimitVertical = 2;
+  let shipScale = null;
+  if (window.innerWidth < 768) {
+    shipScale = [0.9, 0.9, 0.9];
+  } else {
+    shipScale = [1.5, 1.5, 1.5];
+  }
 
   const handleMouseMove = (event) => {
     if (isRotating) {
@@ -95,7 +101,7 @@ const Ship = ({ isRotating, animationSpeed, planetPosition, ...props }) => {
     <mesh {...props} ref={shipRef}>
       <primitive
         object={scene}
-        scale={[1.5, 1.5, 1.5]}
+        scale={shipScale}
         rotation={[rotationX, rotation, 0]}
         position={[-3, 0, -10]}
       />

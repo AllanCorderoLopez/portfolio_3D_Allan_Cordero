@@ -27,6 +27,19 @@ const PlanetCanvas = ({
   const flagPosition = [2.45, 1.3, 3.4];
   const flagPosition2 = [2, 0.9, -3.8];
   const flagPosition3 = [-4.3, -1, 0.2];
+  const handleTouchStart = (e) => {
+    e.stopPropagation();
+    setIsRotating(true);
+    const touch = e.touches[0];
+    lastX.current = touch.clientX;
+    lastY.current = touch.clientY;
+  };
+
+  const handleTouchEnd = (e) => {
+    e.stopPropagation();
+    setIsRotating(false);
+  };
+
 
   const handlePointerDown = (e) => {
     e.stopPropagation();
@@ -65,10 +78,41 @@ const PlanetCanvas = ({
         targetRotationX.current = newRotationX;
       }
 
+        
       lastX.current = clientX;
       lastY.current = clientY;
     }
   };
+
+  const handleTouchMove = (e) => {
+    if (isRotating) {
+      const touch = e.touches[0];
+      const deltaX = touch.clientX - lastX.current;
+      const deltaY = touch.clientY - lastY.current;
+
+      const retrocesoFactor = 0.05;
+
+      targetRotationY.current += (deltaX / viewport.width) * Math.PI * 0.03;
+
+      const newRotationX =
+        targetRotationX.current + (deltaY / viewport.height) * Math.PI * 0.03;
+      if (newRotationX > Math.PI / 3) {
+        targetRotationX.current =
+          Math.PI / 3 + (newRotationX - Math.PI / 3) * retrocesoFactor;
+      } else if (newRotationX < -Math.PI / 3) {
+        targetRotationX.current =
+          -Math.PI / 3 + (newRotationX + Math.PI / 3) * retrocesoFactor;
+      } else {
+        targetRotationX.current = newRotationX;
+      }
+     
+
+      lastX.current = touch.clientX;
+      lastY.current = touch.clientY;
+    }
+  };
+
+
 
   const isInsideZone = (position, minBounds, maxBounds) => {
     return (
@@ -98,6 +142,8 @@ const PlanetCanvas = ({
         targetRotationX.current,
         smoothingFactor
       );
+
+      
 
       const rotationMatrix = new THREE.Matrix4();
 
@@ -202,14 +248,24 @@ const PlanetCanvas = ({
   });
 
   useEffect(() => {
+
+    
     document.addEventListener("pointerdown", handlePointerDown);
     document.addEventListener("pointerup", handlePointerUp);
     document.addEventListener("pointermove", handlePointerMove);
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchend", handleTouchEnd);
+    document.addEventListener("touchmove", handleTouchMove);
+
 
     return () => {
       document.removeEventListener("pointerdown", handlePointerDown);
       document.removeEventListener("pointerup", handlePointerUp);
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchend", handleTouchEnd);
       document.removeEventListener("pointermove", handlePointerMove);
+      document.addEventListener("touchmove", handleTouchMove);
+
     };
   }, [isRotating, scene]);
 
