@@ -29,7 +29,7 @@ function Popup({ currentStage }) {
   if (currentStage === 1 && isOpen) {
     return (
 
-      <div className="p-3  w-40   fixed top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 rounded-xl">
+      <div className="p-3  w-40   fixed  top-96  mt-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 rounded-xl">
       <div className="h-1 w-10 bg-red-600"></div>
       <div className="text-sm md:text-2xl font-extrabold text-white select-none">
         Hi, I am Allan 👋
@@ -42,7 +42,7 @@ function Popup({ currentStage }) {
   if (currentStage === 2) {
    {
     return (
-      <div className="p-3  w-40   fixed top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 rounded-xl">
+      <div className="p-3  w-40   fixed top-96  mt-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 rounded-xl">
       <div className="h-1 w-10 bg-blue-600"></div>
       <div className="text-sm md:text-2xl font-extrabold text-white select-none">
         Im specializing in Frontend Dev 🎨
@@ -91,7 +91,7 @@ function Popup({ currentStage }) {
   if (currentStage === 3) {
 
     return (
-      <div className="p-3  w-40   fixed top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 rounded-xl">
+      <div className="p-3  w-40   fixed top-96  mt-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 rounded-xl">
       <div className="h-1 w-10 bg-yellow-600"></div>
       <div className="text-sm md:text-2xl font-extrabold text-white select-none">
         See my projects 🚀
