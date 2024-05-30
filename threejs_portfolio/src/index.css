@@ -10,8 +10,9 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;     overflow-y: hidden;
-
+  font-family: "Work Sans", sans-serif;    
+   overflow-y: hidden;
+   transform: scale(1);
 }
 
 body:has(.card[data-color="blue"]:hover) {

@@ -47,7 +47,7 @@ function Home() {
       <div
       className="fixed top-1/2 ml-10 z-10 mt-64 flex items-center pr-10"
       onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)} // Aquí actualizamos el estado cuando el mouse se va
+      onMouseLeave={() => setIsHovered(false)} 
     >
      {/* <div className="relative">
         <div
