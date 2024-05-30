@@ -1,6 +1,9 @@
 import React from "react";
 import "./styles.css"; // asegúrate de tener un archivo CSS para tus estilos
 import { useState, useEffect } from "react";
+import { NavLink } from 'react-router-dom'
+
+
 function Popup({ currentStage }) {
   const [isOpen, setIsOpen] = useState(true);
 
@@ -96,15 +99,16 @@ function Popup({ currentStage }) {
       <div className="text-sm md:text-2xl font-extrabold text-white select-none">
         See my projects 🚀
       </div>
-      <a
-            href="#"
-            className="flex text-sm items-center block text-yellow-600 font-bold tracking-wide flex"
-          >
+      <NavLink to='/projects' className={({isActive}) => {
+                return isActive ? 'text-blue-500' : 'text-white'
+            }
+            }>
+
             <span className="select-none">
               My Projects >
             </span>
             <i className="bx bx-right-arrow-alt ml-1"></i>
-          </a>
+          </NavLink>
     </div>
     );
 
