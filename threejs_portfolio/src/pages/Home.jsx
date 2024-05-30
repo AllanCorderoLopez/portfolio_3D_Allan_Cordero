@@ -75,7 +75,7 @@ function Home() {
             */} 
     </div>
 
-      <div className="absolute top-1/2 z-10 left-1/2 transform right-50 ml-40">
+      <div className="absolute lg:top-1/2 top-40 z-10 left-1/2 transform lg:right-50 lg:ml-40">
         {currentStage && <Popup currentStage={currentStage} />}
       </div>
       <Canvas
