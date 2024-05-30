@@ -49,7 +49,7 @@ function Home() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)} // Aquí actualizamos el estado cuando el mouse se va
     >
-      <div className="relative">
+     {/* <div className="relative">
         <div
           className={`isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 flex items-center `}
         >
@@ -70,7 +70,9 @@ function Home() {
             Drag and find the flags...
           </span>
         </div>
+
       </div>
+            */} 
     </div>
 
       <div className="absolute top-1/2 z-10 left-1/2 transform right-50 ml-40">
