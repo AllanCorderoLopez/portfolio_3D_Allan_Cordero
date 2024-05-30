@@ -43,7 +43,7 @@ function Home() {
     adjustPlanetForScreenSize();
 
   return (
-    <section className="w-full h-screen relative bg-black">
+    <section className="w-full h-screen relative bg-black overflow-y-hidden">
       <div
       className="fixed top-1/2 ml-10 z-10 mt-64 flex items-center pr-10"
       onMouseEnter={() => setIsHovered(true)}
