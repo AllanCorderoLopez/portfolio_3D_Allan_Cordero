@@ -1,6 +1,6 @@
 import React from 'react'
 import Beams from '../components/Beams'
-function Projects() {
+function Portfolio() {
   return (
     <>
      <div className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
@@ -24,4 +24,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Portfolio
