@@ -15,7 +15,6 @@ const App = () => {
   return (
     <main className='bg-slate-300/20'>
       <Router>
-       
         <FloatingNav navItems={navItems} /> 
         <Routes>
             <Route path='/' element={<Home />} />

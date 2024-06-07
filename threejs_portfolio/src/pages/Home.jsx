@@ -2,7 +2,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 import * as THREE from "three";
 import { useEffect } from "react";
-import gifPath from "../assets/gif/globe.gif";
+import gifPath from "../assets/gif/swipe2.gif";
 
 import Loader from "../components/Loader";
 import Sky from "../models/Sky";
@@ -49,7 +49,7 @@ function Home() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)} 
     >
-     {/* <div className="relative">
+     /* <div className="relative">
         <div
           className={`isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 flex items-center `}
         >
@@ -72,7 +72,7 @@ function Home() {
         </div>
 
       </div>
-            */} 
+            
     </div>
 
       <div className="absolute lg:top-1/2 top-40 z-10 left-1/2 transform lg:right-50 lg:ml-40 ">
