@@ -8,7 +8,7 @@ export function TabsDemo() {
       title: "BH Constructora",
       value: "BH Constructora",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-900 to-slate-800">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-900 to-slate-800">
           <p className="text-white font-sans font-medium">BH Constructora project manager</p>
           <BHCONTRUCTORA />
         </div>
@@ -18,9 +18,9 @@ export function TabsDemo() {
       title: "SEO keyword with GPT-API",
       value: "SEO keyword with GPT-API",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-900 to-slate-800">
-            <p className="text-white font-sans font-medium">SEO keyword with GPT-API</p>
-          <SEOKEYWORD />
+        <div className="w-full overflow-hidden relative h-full rounded-2xl text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-900 to-slate-800">
+          <p className="text-white font-sans font-medium">SEO keyword with GPT-API</p>
+          <SEOKEYWORD    />
         </div>
       ),
     },
@@ -41,7 +41,7 @@ const SEOKEYWORD = () => {
         alt="bhconstrutora image"
         width="100"
         height="100"
-        className=" h-[60%]  md:h-[80%] absolute -bottom-0 inset-x-0 w-[100%] rounded-xl mx-auto"
+        className=" h-[80%]  md:h-[80%] absolute -bottom-0 inset-x-0 w-[100%] rounded-xl mx-auto"
         />
     );
   };
@@ -54,7 +54,7 @@ const BHCONTRUCTORA = () => {
         alt="bhconstrutora image"
         width="100"
         height="100"
-        className=" h-[60%]  md:h-[80%] absolute -bottom-0 inset-x-0 w-[100%] rounded-xl mx-auto"
+        className=" h-[80%]  md:h-[80%] absolute -bottom-0 inset-x-0 w-[100%] rounded-xl mx-auto"
         />
     );
   };
@@ -67,7 +67,7 @@ const TRAINING = () => {
         alt="bhconstrutora image"
         width="100"
         height="100"
-        className=" h-[60%]  md:h-[70%] absolute -bottom-0 inset-x-0 w-[70%] rounded-xl mx-auto"
+        className=" h-[70%]  md:h-[70%] absolute -bottom-0 inset-x-0 w-[100%] rounded-xl mx-auto"
         />
     );
   };
