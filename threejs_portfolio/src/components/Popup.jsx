@@ -53,7 +53,7 @@ function Popup({ currentStage }) {
       <div className="text-sm md:text-2xl font-extrabold text-white select-none">
         Im specializing in Frontend Dev 🎨
       </div>
-      <NavLink to='/projects' className={({isActive}) => {
+      <NavLink to='/portfolio' className={({isActive}) => {
                 return isActive ? 'text-blue-500' : 'text-white'
             }
             }>
@@ -82,7 +82,7 @@ function Popup({ currentStage }) {
       <div className="text-sm md:text-2xl font-extrabold text-white select-none">
         See my projects 🚀
       </div>
-      <NavLink to='/projects' className={({isActive}) => {
+      <NavLink to='/portfolio' className={({isActive}) => {
                 return isActive ? 'text-blue-500' : 'text-white'
             }
             }>
