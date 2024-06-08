@@ -8,6 +8,15 @@
   --blue-rgb: 237 245 255;
   --green-rgb: 125 161 35;
 }
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   font-family: "Work Sans", sans-serif;    

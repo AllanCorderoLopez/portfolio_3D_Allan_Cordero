@@ -24,18 +24,14 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
  
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
  
   useMotionValueEvent(scrollYProgress, "change", (current) => {
 
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
-      if(window.screen.width > 640){
         setVisible(true);
-      }
-      if(window.screen.width < 640){
-        setVisible(false);
-      }
+      
     }
   });
  
@@ -67,7 +63,7 @@ export const FloatingNav = ({
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className=" sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
 
