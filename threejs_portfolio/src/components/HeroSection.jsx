@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <div className="h-[41rem] rounded-md bg-neutral-950 relative flex flex-col justify-center antialiased">
+    <div className="h-[18rem] mb-36 rounded-md bg-neutral-950 relative flex flex-col justify-center antialiased">
     <div className="max-w-2xl h-1/2 p-4 mt-32 md:ml-40">
       <h1 className="relative z-10 text-lg justify-center item md:text-5xl text-4xl bg-clip-text text-transparent bg-white font-sans font-bold">
         Hello, <br />
