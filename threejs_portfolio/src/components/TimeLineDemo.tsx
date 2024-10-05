@@ -8,7 +8,7 @@ export function TimelineDemo() {
       icon: <span aria-label="Experience icon">📅</span>,
       content: (
         <div className="text-white">
-          <h3 className="bg-gradient-to-r from-cyan-400 via-violet-600 to-purple-700 text-transparent bg-clip-text py-10 text-sm">
+          <h3 className="bg-gradient-to-r from-cyan-400 to-indigo-600 text-transparent bg-clip-text py-10 text-sm">
             <strong>Web Development Intern at Hermosa Software</strong>
           </h3>
           <h3 className="text-gray-200 py-5 text-sm">Costa Rica, 2024 - Present</h3>
@@ -23,7 +23,7 @@ export function TimelineDemo() {
       icon: <span aria-label="Education icon">🎓</span>,
       content: (
         <div className="text-white">
-          <h3 className="bg-gradient-to-r from-cyan-400 via-violet-600 to-purple-700 text-transparent bg-clip-text py-10 text-sm">
+          <h3 className="bg-gradient-to-r from-cyan-400 to-indigo-600 text-transparent bg-clip-text py-10 text-sm">
             <strong>Software Engineering</strong>
           </h3>
           <h3 className="text-gray-200 py-5 text-sm">University of Costa Rica, 2019 - 2024</h3>
@@ -38,7 +38,7 @@ export function TimelineDemo() {
       icon: <span aria-label="Projects icon">🚀</span>,
       content: (
         <div className="text-white">
-          <h3 className="bg-gradient-to-r from-cyan-400 via-violet-600 to-purple-700 text-transparent bg-clip-text py-10 text-sm">
+          <h3 className="bg-gradient-to-r from-cyan-400 to-indigo-600 text-transparent bg-clip-text py-10 text-sm">
             <strong>Pegando Tour App</strong>
           </h3>
           <h3 className="text-gray-200 py-5 text-sm">Costa Rica, 2024</h3>
