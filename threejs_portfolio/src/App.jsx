@@ -6,9 +6,7 @@ import FloatingNav from '../src/components/FloatingNav'; // Importa el component
 
 const navItems = [
   { name: 'Home', link: '/' },
-  { name: 'Projects', link: '/portfolio#projects'},
-  { name: 'Contact', link: '/portfolio#contact' },
-  { name: 'About', link: '/portfolio#about' },
+  { name: 'Portfolio', link: '/portfolio' },
 ];
 
 const App = () => {
@@ -18,8 +16,6 @@ const App = () => {
         <FloatingNav navItems={navItems} /> 
         <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/portfolio' element={<Portfolio />} />
         </Routes>
 

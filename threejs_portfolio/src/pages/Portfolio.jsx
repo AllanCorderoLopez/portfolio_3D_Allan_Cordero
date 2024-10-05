@@ -9,8 +9,8 @@ import { TimelineDemo } from "../components/TimeLineDemo";
 function Portfolio() {
   return (
     <>
-      <HeroSection/>
       <Beams />
+      <HeroSection/>
       <TimelineDemo />
     </>
   );
