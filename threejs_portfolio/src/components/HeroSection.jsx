@@ -18,7 +18,7 @@ function HeroSection() {
       Contact me
     </button>
 
-    <button href="https://www.linkedin.com/in/allan-cordero-l%C3%B3pez/" onClick={() => window.open("https://www.linkedin.com/in/allan-cordero-3b0b3b1b9/")}
+    <button href="https://www.linkedin.com/in/allan-cordero-lópez-" onClick={() => window.open("https://www.linkedin.com/in/allan-cordero-3b0b3b1b9/")}
      className="relative z-30 mt-10 h-12 animate-shimmer items-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
       LinkedIn
     </button>
