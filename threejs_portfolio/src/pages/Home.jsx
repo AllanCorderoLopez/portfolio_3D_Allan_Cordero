@@ -23,7 +23,7 @@ function Home() {
   const [isRotatingUp, setIsRotatingUp] = useState(false);
   const [isRotatingDown, setIsRotatingDown] = useState(false);
   const [currentStage, setCurrentStage] = useState(null);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(true);
 
   const adjustPlanetForScreenSize = () => {
     let screenScale = null;
@@ -45,39 +45,38 @@ function Home() {
   return (
     <section className="w-full h-screen relative bg-black overflow-y-hidden">
       <div
-      className="fixed top-1/2 ml-2 md:ml-10 z-10 mt-64 flex items-center pr-10"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)} 
-    >
-     /* <div className="relative">
-        <div
-          className={`isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 flex items-center `}
-        >
-          <img
-            src={gifPath}
-            alt="Gif"
-            className="w-12 h-12 z-20" // Tamaño del ícono
-          />
-        </div>
-        <div>
-          <span
-            className={`select-none z-10 w-40 absolute inset-0 flex items-center justify-center text-white rounded-full transition-transform duration-300 ${
-              isHovered
-                ? "translate-x-14 pl-1 opacity-100 ease-in-out "
-                : "translate-x-12 opacity-0 ease-out"
-            }`}
+        className="fixed top-1/2 ml-2 md:ml-10 z-10 mt-64 flex items-center pr-10"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(true)}
+      >
+        /*{" "}
+        <div className="relative">
+          <div
+            className={`isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 flex items-center `}
           >
-            Drag and find the flags...
-          </span>
+            <img
+              src={gifPath}
+              alt="Gif"
+              className="w-12 h-12 z-20" // Tamaño del ícono
+            />
+          </div>
+          <div>
+            <span
+              className={`select-none z-10 w-40 absolute inset-0 flex items-center justify-center text-white rounded-full transition-transform duration-300 ${
+                isHovered
+                  ? "translate-x-14 pl-1 opacity-100 ease-in-out "
+                  : "translate-x-12 opacity-0 ease-out"
+              }`}
+            >
+              Drag and find the flags...
+            </span>
+          </div>
         </div>
-
       </div>
-            
-    </div>
-
-      <div className="absolute lg:top-1/2 top-40 z-10 left-1/2 transform lg:right-50 lg:ml-40 ">
+      <div className="mr-40 absolute top-40 lg:top-1/2 lg:left-1/2 transform z-10 lg:translate-x-0 lg:left-auto lg:right-50 lg:ml-40">
         {currentStage && <Popup currentStage={currentStage} />}
       </div>
+
       <Canvas
         className={`w-full h-full bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
