@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import clsx from "clsx"; // Install clsx package: npm install clsx
+import clsx from "clsx"; 
+import { Link } from "react-router-dom";
 
 export default function Popup({ currentStage }) {
   const [isOpen, setIsOpen] = useState(true);
@@ -114,13 +115,10 @@ function GalacticCard({
           <h2 className="text-2xl font-extrabold text-white font-space">{title}</h2>
           {subtitle && <p className="text-lg text-gray-300 font-space">{subtitle}</p>}
           {linkText && linkHref && (
-            <a
-              href={linkHref}
-              className={clsx(
-                "flex items-center font-bold tracking-wide transition-colors duration-200 font-space",
-                `text-white`,
-                `hover:text-${color}-300`
-              )}
+            <Link
+              to={linkHref}
+              onClick={onClose}
+              className="flex items-center text-white font-space hover:text-white"
             >
               <span>{linkText}</span>
               <svg
@@ -137,7 +135,7 @@ function GalacticCard({
                   d="M13 7l5 5m0 0l-5 5m5-5H6"
                 />
               </svg>
-            </a>
+            </Link>
           )}
           <div className="flex space-x-2">
             {[...Array(5)].map((_, i) => (
