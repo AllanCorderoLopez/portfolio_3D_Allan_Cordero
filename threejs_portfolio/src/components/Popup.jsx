@@ -33,7 +33,7 @@ export default function Popup({ currentStage }) {
     return (
       <GalacticCard
         color="bg-blue-400"
-        title="I'm specializing in Frontend Dev 🎨"
+        title="I'm fullstack developer 🛠️"
         linkText="My Skills"
         linkHref="/portfolio"
       />

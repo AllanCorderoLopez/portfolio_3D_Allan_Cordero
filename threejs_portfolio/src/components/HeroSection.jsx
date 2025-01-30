@@ -9,7 +9,7 @@ function HeroSection() {
       <h1 className="relative z-10 text-lg justify-center item md:text-5xl text-4xl bg-clip-text text-transparent bg-white">
         Hello, <br />
         I am <span className="text-blue-500">Allan</span> Cordero, <br />
-        Front End Developer
+        Full Stack Developer
       </h1>
 
     <div className='flex gap-10'>
