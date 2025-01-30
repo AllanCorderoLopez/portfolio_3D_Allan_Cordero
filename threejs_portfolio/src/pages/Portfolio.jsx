@@ -8,11 +8,11 @@ import { TimelineDemo } from "../components/TimeLineDemo";
 
 function Portfolio() {
   return (
-    <>
+    <div className="w-full h-full relative bg-black overflow-y-hidden">
       <Beams />
       <HeroSection/>
       <TimelineDemo />
-    </>
+    </div>
   );
 }
 

@@ -44,15 +44,15 @@ export default function Timeline({ data }: { data: TimelineEntry[] }) {
 
   return (
     <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans px-4 sm:px-6 md:px-8 lg:px-10"
+      className="w-full  bg-neutral-950 dark:bg-neutral-950 font-sans px-4 sm:px-6 md:px-8 lg:px-10 mb-64"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-10 sm:py-14 lg:py-20">
+      <div className="max-w-7xl mx-auto py-30 sm:py-14 lg:py-20">
         <div ref={ref} className="relative max-w-7xl mx-auto">
           {timelineData.map((item, index) => (
             <div
               key={index}
-              className="flex  flex-col md:flex-row items-start justify-start pt-10 md:pt-20 lg:pt-40 gap-6 md:gap-10"
+              className="flex flex-col md:flex-row items-start justify-start pt-10 md:pt-20 lg:pt-40 gap-6 md:gap-10"
             >
               <div className="z-40  text-white sticky flex flex-col bg-black block text-xl sm:text-2xl mb-4 font-bold">
                 <div className="relative p-3 bg-black rounded-lg shadow-md flex items-center justify-center">
@@ -66,7 +66,7 @@ export default function Timeline({ data }: { data: TimelineEntry[] }) {
               </div>
 
               <div className="relative pl-16 pr-4 w-full  text-white">
-                <h3 className=" block text-xl sm:text-2xl mb-4 font-bold text-white">
+                <h3 className="mt-8 block text-xl sm:text-2xl mb-4 font-bold text-white">
                   {item.title}
                 </h3>
                 <h3 className=" block text-xl sm:text-2xl mb-4 font-bold text-white">
