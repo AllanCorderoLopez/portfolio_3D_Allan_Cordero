@@ -14,7 +14,7 @@ export function TimelineDemo() {
               <strong>Web Development Intern at Hermosa Software</strong>
             </h3>
             <h3 className="text-gray-200 py-5 text-sm">
-              Costa Rica, 2024 - Present
+              Costa Rica, 2023 - Present
             </h3>
             <h4 className="text-gray-200 text-sm">
               Developing web applications using technologies like React, node, postgresql
